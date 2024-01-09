@@ -96,6 +96,7 @@ h3 {
     background: rgb(231,225,222);
     background: linear-gradient(221deg, rgba(231,225,222,1) 35%, rgba(113,247,255,1) 100%);
     height: 78em;
+    height: 90vh;
     width: 100%;
     position:relative;
     top: 0;
@@ -112,7 +113,7 @@ h3 {
 
 /*Size & Position the Div*/    
 width: 70%;
-height: 71%;
+height: 68%;
 border-radius: 50px;
 background: rgb(253, 253, 253);
 margin-top: 4em;
@@ -132,8 +133,8 @@ width: fit-content;
 }
 
   .img-wrapper img {
-    width: 57em;
-    height: 61.2em;
+    width: 60em;
+    height: 65em;
     position: relative;
     margin-top: 0;
     margin-left: 0 ;
@@ -158,6 +159,7 @@ width: fit-content;
     justify-content: center;
     position: relative;
     margin-top: 3em;
+    margin-left: 0;
 }
 
 /*HERO TEXT*/
@@ -222,11 +224,71 @@ width: fit-content;
 #about {
 
     background: rgb(0, 0, 0);
-    height: 78em;
+    height: 100vh;
     width: 100%;
-    position: relative;
+    position: absolute;
+
+}
+
+
+#about p {
+    color: white;
+}
+
+.about-header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15em;
+    text-transform: uppercase;
+
+
+}
+
+#about h3 {
+    margin-left: 8em;
+    margin-right: ;
+}
+
+#about .color-line {
+    height: 3em;
+    width: 55.5vw;
+    background: rgb(255,1,245);
+    background: linear-gradient(90deg, rgba(255,1,245,1) 0%, rgba(33,242,243,1) 100%);
+}
+
+/*---------------------------------------------------------------------*/
+/*SKILLS*/
+
+#skills {
+    background: white;
+    height: 200vh;
+    width: 100%;
+    position: static;
     top: 0;
     left: 0;
-    z-index: 10000000;
-    
+    z-index: 100000001;
 }
+
+#skills h3 {
+    color: black;
+}
+
+/*---------------------------------------------------------------------*/
+/*PROJECTS*/
+
+#projects {
+    background: black;
+    height: 200vh;
+    width: 100%;
+    position: static;
+}
+
+
+
+/*---------------------------------------------------------------------*/
+/*CONTACT ME*/
+
+/*---------------------------------------------------------------------*/
+/*FOOTER*/
