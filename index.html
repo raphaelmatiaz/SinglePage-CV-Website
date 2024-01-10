@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="Javascript.js"></script>
 </head>
 <body>
 
@@ -17,10 +18,10 @@
     <nav>
         <div>
             <ul>
-                <a href="#">
+                <a class="navbar-link" href="#">
                     <li>Home</li>
                 </a>
-                <a href="#about">
+                <a class="navbar-link" href="#about">
                     <li>About</li>
                     
 
@@ -28,7 +29,7 @@
 
                     </p>
                 </a>
-                <a href="#">
+                <a class="navbar-link" href="#">
                     <li>Skills</li>
                 </a>
             </ul>
@@ -45,13 +46,13 @@
             
         <div>
             <ul>
-                <a href="#">
+                <a class="navbar-link" href="#">
                     <li>Projects</li>
                 </a>
-                <a href="#">
+                <a class="navbar-link" href="#">
                     <li>Contact</li>
                 </a>
-                <a href="#">
+                <a class="navbar-link" href="#">
                     <li>Socials</li>
                 </a>
             </ul>
@@ -87,24 +88,45 @@
 
             </div>
     </section>
-    <section id="about">
+    
+    <section id="about" class=".dark-section">
         <div class="about-header">
             <h3>About Me</h3>
             <div class="color-line"></div>
         </div>
-        <div class="text-wrapper">
-            <p>I’m a digital nomad with a passion for art and technology. I have two years of apprenticeship in both front and back end development.
-            
-            <p>I use  a multitude of  programming languages  and  tools to create stunning, one-of-a-kind technological solutions.</p>
-            <p>I’m Currently residing in my native country, Portugal, and will work globally, taking on any web development challenge to further increase my expertise in this field.</p>
+
+        <div class="about-content">
+                <div class="content-1-wrapper">
+                        <div class="rectangle"></div>
+                        <p>I’m a digital nomad with a passion for art and technology. I have two years of apprenticeship in both front and back end development.
+                </div>
+
+                <div class="content-2-wrapper">
+                        <div class="rectangle"></div>
+                        <p id="p2">I use  a multitude of  programming languages  and  tools to create stunning, one-of-a-kind technological solutions.</p>
+                </div>
+
+
+                <div class="content-3-wrapper">
+                        <div class="rectangle"></div>
+                        <p id="p3">I’m Currently residing in my native country, Portugal, and will work globally, taking on any web development challenge to further increase my expertise in this field.</p>
+                </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
     <section id="skills">
         <h3>Technical Skills</h3>
 
 
     </section>
-    <section id="projects"></section>
+    <section id="projects" class=".dark-section"></section>
     <section id="contact"></section>
     <section id="footer" id="socials"></section>
     
