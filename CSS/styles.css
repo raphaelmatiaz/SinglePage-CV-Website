@@ -14,10 +14,45 @@ html {
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(231,225,222);
+    display: flex;
+    flex-direction: column;
 }
 /*----------------------------------------------------------*/
 /*NAVBAR*/
+
+nav {
+    position: fixed;  /*make navbar sticky*/
+    top: 0;
+    width: 100%;
+    height: 10%;
+    padding-top: 1rem;
+    padding-bottom: 1rem ;
+    z-index: 9999999999999999999999999999999999999999999999; /* Make sure it's above other elements */
+    background-color: rgba(255, 255, 255, 0.4); /* Transparent background */
+    margin-top: 1.8em;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+  }
+
+nav #left-nav {
+margin-right: 10vw;
+
+}
+
+nav #right-nav {
+    margin-left: 10vw;
+
+}
+
+.logo {
+width: 5%;
+}
+    
 
 li {
     list-style-type: none;
@@ -33,26 +68,6 @@ a:hover {
     color:rgb(255, 1, 245); /*FF01F5*/
 }
 
-nav {
-
-    /*make navbar sticky*/
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100000000000;
-
-
-    width: 100%; /* Ensure the nav takes up the full width */
-    height: 10em;
-    /*border: 1px solid black;*/
-    margin-top: 3.8em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(red, green, blue, 0.5);
-
-  }
 
 nav ul {
     display: flex;
@@ -64,11 +79,6 @@ nav ul li {
 }
 
 
-svg.logo {
-max-width: 4.5vw;
-margin-left: 10%;
-margin-right: 10%;
-}
 
 /*------------------------------------------------------------------------------*/
 /*LANDING PAGE HERO SECTON*/
@@ -82,7 +92,7 @@ h1 {
 }
 
 h3 {
-    font-size: 5.6rem;
+    font-size: 3.5vw;
     font-weight: bold;
     color: white;
     
@@ -106,12 +116,15 @@ h3 {
 
 .hero-section {
 
-/*Size & Position the Div*/    
+/*Size & Position the Div + style*/    
 width: 70%;
 height: 68%;
+margin-top: 4em;
 border-radius: 50px;
 background: rgb(253, 253, 253);
-margin-top: 4em;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
 
 /*Relative to Child Elements*/
 display: flex;
@@ -130,7 +143,7 @@ width: fit-content;
   .img-wrapper img {
     width: 35vw;
     height: 70vh;
-    position: relative;
+
     margin-top: 0;
     margin-left: 0 ;
     max-width: 600px; /* Set a maximum width for the image wrapper */
@@ -152,7 +165,7 @@ width: fit-content;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
+
     margin-top: 3em;
     margin-left: 0;
 }
@@ -194,7 +207,7 @@ width: fit-content;
 }
 
 .button-wrapper {
-    position: relative;
+
     margin-top: 4em;
 }
 
@@ -216,14 +229,17 @@ width: fit-content;
 /*---------------------------------------------------------------------*/
 /*ABOUT*/
 
+#japanese-text {
+    position: absolute;
+    transform: rotate(180deg);
+    color: rgb(109, 45, 119);
+}
+
 #about {
 
     background: rgb(0, 0, 0);
     height: 100vh;
     width: 100vw;
-    position: relative;
-    
-
 }
 
 
@@ -249,7 +265,7 @@ width: fit-content;
 }
 
 #about .color-line {
-    height: 3em;
+    height: 2vw;
     width: 56vw;
     background: rgb(255,1,245);
     background: linear-gradient(90deg, rgba(255,1,245,1) 0%, rgba(33,242,243,1) 100%);
@@ -354,21 +370,117 @@ margin-left: 15vw;
 
 
 
+
+
 /*---------------------------------------------------------------------*/
 /*SKILLS*/
 
-#skills {
-    background: white;
-    height: 200vh;
-    width: 100%;
+.glitch-box {
+    position: absolute;
+    
+}
+
+#anchor-target-skills {
+    position: absolute;
+    height: 10em;
+    width: 10em;
+    /*background-color: red;*/
+    z-index: 1000000000000000000000000000000000000;
+    margin-top: -50%;
+
+}
+
+#skills p {
+    font-size: 3.2rem;
+    
+}
+
+#skills h3 {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#upper-city {
+    transform: rotate(180deg); /* Flip the image upside down */
+    width: 100vw;
     position: static;
-    top: 0;
-    left: 0;
-    z-index: 100000001;
+}
+
+#lower-city {
+    width: 100vw;
+    position: static;
+}
+
+#languages-wrapper {
+background-color: rgb(253,252,253);
+width: 100vw;
+min-height: 50vh;
+display: flex;
+flex-direction: row;
+}
+
+#first-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccond-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#first-row img {
+    width: 8vw;
+}
+
+
+#seccond-row img {
+    width: 8vw;
+}
+
+#skills {
+    background: rgb(253,253,253);
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #skills h3 {
     color: black;
+    z-index: 9999999999999999999;
+    transform: translateY(-200%);
+}
+
+#first-row .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4vw;
+}
+
+#seccond-row .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4vw;
+}
+
+.css-wrapper {
+    margin-left: -500vw;
 }
 
 /*---------------------------------------------------------------------*/
@@ -378,7 +490,6 @@ margin-left: 15vw;
     background: black;
     height: 200vh;
     width: 100%;
-    position: static;
 }
 
 

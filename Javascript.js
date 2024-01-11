@@ -30,3 +30,9 @@ function updateNavbarLinksColor() {
 document.addEventListener('scroll', updateNavbarLinksColor);
 document.addEventListener('resize', updateNavbarLinksColor);
 
+alert("Isso é uma alerta");
+
+console.log("Isso será registado no console.")
+
+let nome = prompt ("Qual o seu nome?")
+allert('Olá, ${nome}')
