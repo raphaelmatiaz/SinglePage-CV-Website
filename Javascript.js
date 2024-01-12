@@ -36,3 +36,15 @@ console.log("Isso será registado no console.")
 
 let nome = prompt ("Qual o seu nome?")
 allert('Olá, ${nome}')
+
+
+// Function to trigger the animation
+function animateLine() {
+  var line = document.getElementById("animated-line");
+  line.classList.add("appear");
+}
+
+// Trigger the animation when the page loads or when you want to start it
+document.addEventListener("DOMContentLoaded", function () {
+  animateLine();
+});
