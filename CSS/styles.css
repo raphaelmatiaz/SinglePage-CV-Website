@@ -44,22 +44,27 @@ nav {
     justify-content:center;
     align-items: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-
+    
   }
 
 nav #left-nav {
-margin-right: 10vw;
-
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
 }
 
 nav #right-nav {
-    margin-left: 10vw;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
 
 }
 
 .logo {
 height: 100%;
+margin: 0 8%;
 }
     
 
@@ -99,7 +104,7 @@ nav ul li {
 }
 
 h1 {
-    font-size: 7vh;
+    font-size: 5.6vh;
     font-weight: bolder;
     color: rgb(255, 1, 245);
     margin: 0;
@@ -254,7 +259,7 @@ width: fit-content;
 
     background: rgb(0, 0, 0);
     height: fit-content;
-    width: 100%;
+    width: 100vw;
 }
 
 
@@ -512,41 +517,118 @@ flex-direction: row;
 /*---------------------------------------------------------------------*/
 /*PROJECTS*/
 
+#color-line-projects {
+    height: 2vw;
+    width: 56vw;
+    background: linear-gradient(90deg, rgb(1, 255, 209), rgb(251, 245, 3,1));
+}
+
+#color-line-projects-wrapper {
+    display: flex;
+    align-items: center;
+
+
+}
+
 #projects {
     background: black;
     height: 200vh;
     width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+
 }
 
-#projects #project-number {
+#project-number {
     color: white;
-    font-size: 10vw;
+    font-size: 12vw;
     font-weight: bolder;
+    margin-right: 2vw;
 }
 
 #project-name-box {
-    width: 50em;
-    height: 10em;
+    font-size: 2.8vw;
+    font-weight: 400;
+    width:40vw;
+    height: 20vh;
     background-color: rgb(217, 217, 217);
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 #project-content {
-    width: 100vw;
-    height: 30vh;
+    width: 57vw;
+    height: 50vh;
     background-color: rgb(217, 217, 217);
     margin: 1px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    flex-direction: row;
 
 }
-
+#project-image {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
 #project-image img {
-    width: 20%;
+    width: 30vw;
 }
 
+#number-name-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#project-cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-cta-button p {
+    color: white;
+    background-color: black;
+    font-size: 1.4vw;
+    font-weight: bold;
+    padding: 1.5vh 3.5vw;
+    border-radius: 100px;
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    text-shadow: 0px 4px 4px rgba(0, 0, 0.25);
+
+    
+
+
+
+}
+
+#project-cta-button p:hover {
+    background-color: rgb(255, 1, 245);
+}
+
+#text-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3vw;
+}
+
+#text-button-wrapper p {
+    font-size: 1.3vw;
+    margin-bottom: 5vh;
+}
 
 
 /*---------------------------------------------------------------------*/
@@ -574,6 +656,20 @@ flex-direction: row;
 
 /* NEW SKILLS SECTION */
 
+#new-skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#new-skills-section #background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #new-skills-section #top-city {
     position: relative;
     width: 100vw;
@@ -594,13 +690,14 @@ flex-direction: row;
 
 #new-skills-section #central-section {
     height: fit-content;
-    width: 100vw;
+    width: 100%;
     background-color: rgb(251,252,252);
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.3vw;
     font-weight:400;
+
 }
 
 #new-skills-section #central-section h3 {
@@ -632,6 +729,18 @@ flex-direction: row;
 }
 
 
+#projects-content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+
+#color-line-projects-wrapper h3 {
+    margin-left: 3vw;
+}
 
 
 
@@ -644,5 +753,4 @@ flex-direction: row;
 
 
 
-/*NAVBAR TEST*/
 
